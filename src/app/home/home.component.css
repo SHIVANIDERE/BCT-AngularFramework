@@ -1,0 +1,20 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.homepage{
+    display: flex;
+}
+
+.categories{
+    flex:0.2;
+    cursor: pointer;
+}
+
+.products{
+    flex:0.8;
+}
+

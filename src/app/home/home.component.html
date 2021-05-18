@@ -1,0 +1,26 @@
+<div class="homepage">
+    <div class ="categories">
+        <ul class="list-group">
+            <li class="list-group-item">All categories</li>
+            <li class="list-group-item">Electronics</li>
+            <li class="list-group-item">Home & Kitchen</li>
+            <li class="list-group-item">Clothing</li>
+            <li class="list-group-item">Health & Household</li>
+            <li class="list-group-item">Bags, Wallets & Luggage</li>
+        </ul>
+    </div>
+    <div class="products">
+        <ul class="wrapper">
+            <li *ngFor = "let p of products">
+                <div class="card" style="width: 18rem;">
+                    <img src={{p.img_url}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">{{p.name}}</h5>
+                    <h5 class="card-title">Price:{{p.price}}</h5>
+                    <a (click)="addToCart(p)" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div> 
+            </li>
+        </ul>
+    </div>
+</div>

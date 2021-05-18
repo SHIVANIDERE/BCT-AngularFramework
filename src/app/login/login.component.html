@@ -1,0 +1,13 @@
+<div class="container">
+<form (ngSubmit)="loginUser(f)" #f="ngForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input ngModel name = "username" #username = "ngModel" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input ngModel name = "password" #password = "ngModel" type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button class="btn btn-primary submit">Login</button>
+  </form>
+</div>
